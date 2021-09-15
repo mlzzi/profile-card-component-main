@@ -1,0 +1,90 @@
+body {
+  background-color: hsl(185, 75%, 39%);
+  background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: -65% 250%, 150% -220%;
+}
+
+.pattern {
+  border-radius: 15px 15px 0 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  height: 375px;
+  background-color: white;
+  border-radius: 15px;
+  margin: 190px auto;
+}
+
+.photo {
+  width: 96px;
+  height: 96px;
+  margin: -48px auto 0 auto;
+  border-radius: 50%;
+  border: 5px solid white;
+
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  margin: 15px auto 15px auto;
+  align-items: center;
+  line-height: 0.2em;
+}
+
+.info span {
+  font-weight: 400;
+  font-size: 18px;
+  color: hsl(227, 10%, 46%);
+}
+
+h1 {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
+}
+
+
+h3 {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: hsl(227, 10%, 46%);
+}
+
+p {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 400;
+  font-size: 10.5px;
+  color: hsl(227, 10%, 46%);
+  letter-spacing: 0.1em;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  line-height: 1em;
+  border-top: 1px solid hsl(227, 10%, 90%);
+}
+
+.stats-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 0.1em;
+  margin-top: 25px;
+}
+
+.attribution {
+  display: flex;
+  justify-content: center;
+}
+
+.attribution h1 {
+  font-size: 14px;
+}

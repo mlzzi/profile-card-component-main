@@ -2,7 +2,7 @@ body {
   background-color: hsl(185, 75%, 39%);
   background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
   background-repeat: no-repeat;
-  background-position: -65% 250%, 150% -220%;
+  background-position: -85% 200%, 160% -150%;
 }
 
 .pattern {
@@ -16,7 +16,7 @@ body {
   height: 375px;
   background-color: white;
   border-radius: 15px;
-  margin: 190px auto;
+  margin: 170px auto;
 }
 
 .photo {
@@ -83,8 +83,27 @@ p {
 .attribution {
   display: flex;
   justify-content: center;
+  margin-top: -50px;
 }
 
 .attribution h1 {
   font-size: 14px;
+}
+
+@media(max-width: 414px) {
+
+  body {
+    background-position: -790px -500px, 170px 280px;
+  }
+
+  .card {
+    width: 330px;
+    height: 372px;
+    margin: 40% auto;
+  }
+
+  .attribution {
+    margin-top: -50px;
+    visibility: hidden;
+  }
 }

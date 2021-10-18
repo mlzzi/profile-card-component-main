@@ -1,8 +1,19 @@
 body {
   background-color: hsl(185, 75%, 39%);
-  background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
-  background-repeat: no-repeat;
-  background-position: -85% 200%, 160% -150%;
+}
+
+.pattern-top {
+  position: absolute;
+  bottom: 39%;
+  right: 51%;
+  z-index: -1;
+}
+
+.pattern-bottom {
+  position: absolute;
+  top: 42%;
+  left: 46%;
+  z-index: -1;
 }
 
 .pattern {
@@ -92,8 +103,15 @@ p {
 
 @media(max-width: 414px) {
 
-  body {
-    background-position: -790px -500px, 170px 280px;
+  .pattern-top {
+    bottom: 40%;
+    right: 47%;
+  }
+  .pattern-bottom {
+    top: 46%;
+    left: 36%;
+    position: fixed;
+    overflow: hidden;
   }
 
   .card {
